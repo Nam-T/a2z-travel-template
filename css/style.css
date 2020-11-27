@@ -1091,6 +1091,7 @@ main {
 .posts-section {
 	float: left;
 	width: 100%;
+	padding-top: 8px;
 }
 .reviewtext {
 	margin: 0 -20px;
@@ -1112,7 +1113,6 @@ main {
 .post_topbar {
 	float: left;
 	width: 100%;
-	position: relative;
 }
 .rep-post {
 	padding: 0;
@@ -1394,8 +1394,6 @@ main {
 .like-com li a i {
 	margin-right: 2px;
 	font-size: 14px;
-	position: relative;
-	top: 2px;
 }
 .like-com li span {
 	color: #ffffff;
@@ -1416,10 +1414,26 @@ main {
 }
 .like-com li .com {
 	position: relative;
-	top: -9px;
 }
 .like-com li .com img {
 	margin-right: 10px;
+}
+
+.blog-content {
+	padding: 12px 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.blog-content .blog-img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+}
+
+.blog-content .blog-img img {
+	width: 50%;
 }
 
 .job-status-bar > a {
@@ -2900,6 +2914,7 @@ footer {
 	width: 100%;
 	padding-top: 4px;
 }
+
 .user-tab-sec h3 {
 	color: #000000;
 	font-size: 24px;
@@ -2948,6 +2963,11 @@ footer {
 	width: 100%;
 	margin-bottom: 25px;
 }
+
+.tab-guider {
+	margin-bottom: 0px !important;
+}
+
 .tab-feed ul {
 	float: left;
 	width: 100%;
@@ -2972,6 +2992,18 @@ footer {
 .tab-feed ul li.active span {
 	color: #3399ff;
 }
+
+.tab-feed ul li.active {
+	background-color: inherit;
+	color: #3399ff !important;
+	padding-bottom: 9px;
+	border-bottom: 2px solid #3399ff !important;
+}
+
+.tab-feed ul {
+	border-bottom: 1px solid #e5e5e5;
+}
+
 .tab-feed ul li img {
 	float: none;
 	margin-bottom: 5px;
@@ -3067,11 +3099,12 @@ footer {
 	float: left;
 	width: 100%;
 	background-color: #fff;
-	padding: 30px 20px;
+	padding: 8px;
 	border-left: 1px solid #e4e4e4;
 	border-bottom: 1px solid #e4e4e4;
 	border-right: 1px solid #e4e4e4;
 	margin-bottom: 20px;
+	margin-top: 8px;
 }
 .user-profile-ov h3 {
 	color: #000000;
@@ -5672,12 +5705,37 @@ a:hover {
 
 .wordpressdevlp {
 	background-color: #fff;
+	padding-bottom: 8px;
 }
 .bgclr {
 	background-color: #fff;
 	margin: 10px;
-	border-radius: 18px;
-	border: 2px dashed #48d1cc;
+}
+
+.bgclr .checked {
+	color: #ffff00;
+}
+
+.bgclr .unchecked {
+	color: #cccccc;
+}
+
+.reviewer-avt {
+	width: 12%;
+	height: 50px;
+	padding: 8px;
+}
+.reviewer-avt img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.reviewer-name {
+	padding: 8px;
+}
+
+.review-schedule {
+	display: flex;
 }
 .cadidatesbtn {
 	position: absolute;
@@ -5709,6 +5767,14 @@ a:hover {
 .wordpressdevlp h2 {
 	font-size: 18px;
 	font-weight: 600;
+}
+
+.review-content {
+	display: none;
+}
+
+.guider-avt {
+	width: 10%;
 }
 .cadidatesbtn i {
 	color: #b2b2b2;
@@ -6640,8 +6706,6 @@ ul#myTab {
 	color: #3399ff;
 }
 #schedule {
-	border: 2px solid #00ced1;
-	border-radius: 18px;
 }
 
 #schedule ul li a {
