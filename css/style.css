@@ -604,8 +604,6 @@ nav > ul > li > a:hover {
 .user-account {
 	float: right;
 	width: 110px;
-	border-left: 1px solid #dd3e2b;
-	border-right: 1px solid #dd3e2b;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -3819,7 +3817,7 @@ a:hover {
 	display: inline-block;
 	padding: 0 12px;
 	color: #fff;
-	height: 35px;
+	height: 38px;
 	line-height: 35px;
 }
 .company-up-info ul li a i {
@@ -5177,9 +5175,21 @@ a:hover {
 	float: left;
 	width: 100%;
 }
+
+.message-send-area .button-send {
+	font-size: 26px;
+	color: #3399ff;
+	padding: 12px;
+}
 .mf-field {
-	float: left;
+	display: flex;
 	width: 100%;
+}
+
+.mf-field .icon-chat i {
+	color: #b2b2b2;
+	font-size: 24px;
+	padding: 8px;
 }
 .mf-field input {
 	float: left;
