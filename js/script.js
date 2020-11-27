@@ -303,7 +303,10 @@ $(".user-info").on("click", function(){$("#users").hide();
 
     });
 
-
+//comment user
+    $("#review-id").on("click", function(){
+        $( "#review-content" ).toggle();
+    });
 
 
 
