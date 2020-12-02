@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Guider Profile</title>
+	<title>Thuê guider</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -57,7 +57,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="profiles.html" title="">
+								<a href="history.html" title="">
 									<span><i class="fas fa-history"></i></span>
 									Lịch sử
 								</a>
@@ -114,7 +114,7 @@
 						<div class="user-account-settingss">
 						
 							<ul class="us-links">
-								<li><a href="profile-account-setting.html" title="">Account Setting</a></li>
+								<li><a href="setting-account.html" title="">Account Setting</a></li>
 								<li><a href="sign-in.html" title="">Logout</a></li>
 						</div><!--user-account-settingss end-->
 					</div>
@@ -128,71 +128,148 @@
 				<div class="company-title">
 					<h3>Thuê Guider</h3>
 				</div><!--company-title end-->
-				<div class="companies-list">
+				
+				<div class="main-section-data">
 					<div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="company_profile_info">
-								<div class="company-up-info">
-									<img src="images/avt.png" alt="">
-									<h3>Thu Trang</h3>
-                                    <ul class="social_links">
-										<li><i class="fas fa-home text-secondary"></i> Quê quán: Lào Cai</li>
-										<li><i class="fas fa-map-marker-alt text-secondary"></i> Sống tại: Sapa, Lào Cai</li>
-										<li><i class="fas fa-heart text-secondary"></i> Sở thích: Du lịch, ca hát</li>
-										<li><i class="fas fa-rss text-secondary"></i> Theo dõi: 229 người theo dõi</li>
-									</ul>
+						<div class="col-lg-3">
+							<div class="filter-secs">
+								<div class="paddy">
+									<div class="filter-dd mt-2">
+										<div class="input-group mb-2">
+											<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Tìm kiếm..">
+											<div class="input-group-prepend">
+											  <div class="input-group-text"><i class="la la-search"></i></div>
+											</div>
+										  </div>
+									</div>
+
+									<div class="filter-dd">
+										<div class="filter-ttl">
+											<h3>Khu vực</h3>
+										</div>
+										<form class="job-tp">
+											<select>
+												<option>Tùy chọn</option>
+												<option>Sapa</option>
+												<option>Hà Nội</option>
+												<option>Hải Phòng</option>
+												<option>Sơn La</option>
+											</select>
+											<i class="fas fa-chevron-down" aria-hidden="true"></i>
+										</form>
+									</div>
+
+									<div class="filter-dd">
+										<div class="filter-ttl">
+											<h3>Giới tính</h3>
+										</div>
+										<ul class="avail-checks">
+											<li>
+												<input type="radio" name="cc" id="c1">
+												<label for="c1">
+													<span></span>
+												</label>
+												<small>Nữ</small>
+											</li>
+											<li>
+												<input type="radio" name="cc" id="c2">
+												<label for="c2">
+													<span></span>
+												</label>
+												<small>Nam</small>
+											</li>
+										</ul>
+									</div>
+
+									<div class="filter-dd">
+										<div class="filter-ttl">
+											<h3>Tuổi</h3>
+										</div>
+										<ul class="avail-checks">
+											<li>
+												<input type="radio" name="cc" id="c1">
+												<label for="c1">
+													<span></span>
+												</label>
+												<small>&lt; &#61; 24 tuổi</small>
+											</li>
+											<li>
+												<input type="radio" name="cc" id="c2">
+												<label for="c2">
+													<span></span>
+												</label>
+												<small>25 tuổi -> 30 tuổi</small>
+											</li>
+
+											<li>
+												<input type="radio" name="cc" id="c2">
+												<label for="c2">
+													<span></span>
+												</label>
+												<small>&gt; 30 tuổi</small>
+											</li>
+										</ul>
+									</div>
+									
+
 								</div>
-								<a href="guider-profile.html" title="" class="view-more-pro">Trang cá nhân</a>
-							</div><!--company_profile_info end-->
+							</div><!--filter-secs end-->
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="company_profile_info">
-								<div class="company-up-info">
-									<img src="images/eya.jpg" alt="">
-									<h3>Ngọc Vân</h3>
-                                    <ul class="social_links">
-										<li><i class="fas fa-home text-secondary"></i> Quê quán: Lào Cai</li>
-										<li><i class="fas fa-map-marker-alt text-secondary"></i> Sống tại: Sapa, Lào Cai</li>
-										<li><i class="fas fa-heart text-secondary"></i> Sở thích: Du lịch, ca hát</li>
-										<li><i class="fas fa-rss text-secondary"></i> Theo dõi: 229 người theo dõi</li>
-									</ul>
+						<div class="col-lg-9">
+							<div class="companies-list">
+								<div class="row">
+									<div class="col-lg-4	 col-md-4 col-sm-6 col-12">
+										<div class="company_profile_info">
+											<div class="company-up-info">
+												<img src="images/avt.png" alt="">
+												<h3>Thu Trang</h3>
+												<ul class="social_links">
+													<li><i class="fas fa-home text-secondary"></i> Quê quán: Lào Cai</li>
+													<li><i class="fas fa-map-marker-alt text-secondary"></i> Sống tại: Sapa, Lào Cai</li>
+													<li><i class="fas fa-heart text-secondary"></i> Sở thích: Du lịch, ca hát</li>
+													<li><i class="fas fa-rss text-secondary"></i> 229 người theo dõi</li>
+												</ul>
+											</div>
+											<a href="guider-profile.html" title="" class="view-more-pro">Trang cá nhân</a>
+										</div><!--company_profile_info end-->
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+										<div class="company_profile_info">
+											<div class="company-up-info">
+												<img src="images/eya.jpg" alt="">
+												<h3>Ngọc Vân</h3>
+												<ul class="social_links">
+													<li><i class="fas fa-home text-secondary"></i> Quê quán: Lào Cai</li>
+													<li><i class="fas fa-map-marker-alt text-secondary"></i> Sống tại: Sapa, Lào Cai</li>
+													<li><i class="fas fa-heart text-secondary"></i> Sở thích: Du lịch, ca hát</li>
+													<li><i class="fas fa-rss text-secondary"></i> 229 người theo dõi</li>
+												</ul>
+											</div>
+											<a href="guider-profile.html" title="" class="view-more-pro">Trang cá nhân</a>
+										</div><!--company_profile_info end-->
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+										<div class="company_profile_info">
+											<div class="company-up-info">
+												<img src="images/any.jpg" alt="">
+												<h3>Nam Vũ</h3>
+												<ul class="social_links">
+													<li><i class="fas fa-home text-secondary"></i> Quê quán: Lào Cai</li>
+													<li><i class="fas fa-map-marker-alt text-secondary"></i> Sống tại: Sapa, Lào Cai</li>
+													<li><i class="fas fa-heart text-secondary"></i> Sở thích: Du lịch, ca hát</li>
+													<li><i class="fas fa-rss text-secondary"></i> 229 người theo dõi</li>
+												</ul>
+											</div>
+											<a href="guider-profile.html" title="" class="view-more-pro">Trang cá nhân</a>
+										</div><!--company_profile_info end-->
+									</div>
+									</div>
+								
 								</div>
-								<a href="guider-profile.html" title="" class="view-more-pro">Trang cá nhân</a>
-							</div><!--company_profile_info end-->
+							</div><!--companies-list end-->
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="company_profile_info">
-								<div class="company-up-info">
-									<img src="images/any.jpg" alt="">
-									<h3>Nam Vũ</h3>
-                                    <ul class="social_links">
-										<li><i class="fas fa-home text-secondary"></i> Quê quán: Lào Cai</li>
-										<li><i class="fas fa-map-marker-alt text-secondary"></i> Sống tại: Sapa, Lào Cai</li>
-										<li><i class="fas fa-heart text-secondary"></i> Sở thích: Du lịch, ca hát</li>
-										<li><i class="fas fa-rss text-secondary"></i> Theo dõi: 229 người theo dõi</li>
-									</ul>
-								</div>
-								<a href="guider-profile.html" title="" class="view-more-pro">Trang cá nhân</a>
-							</div><!--company_profile_info end-->
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="company_profile_info">
-								<div class="company-up-info">
-									<img src="images/eya2.jpg" alt="">
-									<h3>Phương Nhung</h3>
-									<ul class="social_links">
-										<li><i class="fas fa-home text-secondary"></i> Quê quán: Lào Cai</li>
-										<li><i class="fas fa-map-marker-alt text-secondary"></i> Sống tại: Sapa, Lào Cai</li>
-										<li><i class="fas fa-heart text-secondary"></i> Sở thích: Du lịch, ca hát</li>
-										<li><i class="fas fa-rss text-secondary"></i> Theo dõi: 229 người theo dõi</li>
-									</ul>
-								</div>
-								<a href="guider-profile.html" title="" class="view-more-pro">Trang cá nhân</a>
-							</div><!--company_profile_info end-->
-						</div>
-					
 					</div>
-				</div><!--companies-list end-->
+				</div><!-- main-section-data end-->
 				<div class="process-comm">
 					<div class="spinner">
 						<div class="bounce1"></div>
