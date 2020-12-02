@@ -1115,6 +1115,9 @@ main {
 .rep-post {
 	padding: 0;
 }
+.avt-guider-blog img {
+	width: 8%;
+}
 .usy-dt {
 	float: left;
 }
@@ -4717,6 +4720,7 @@ a:hover {
 }
 .noty-user-img img {
 	width: 100%;
+	border-radius: 50%;
 }
 .notification-info {
 	float: left;
