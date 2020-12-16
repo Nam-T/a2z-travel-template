@@ -308,8 +308,6 @@ $(".user-info").on("click", function(){$("#users").hide();
         $( "#review-content" ).toggle();
     });
 
-
-
 });
 
 

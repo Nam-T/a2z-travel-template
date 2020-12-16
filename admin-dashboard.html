@@ -93,18 +93,18 @@
 										<div class="acc-setting">
 											<div class="title-table">
 												<h3>Quản lý Admin</h3>
-												<button class="btn btn-primary" type="button">Thêm mới</button>
+												<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#add-edit-admin">Thêm mới</button>
 										  </div>
 										  <table class="table mb-0">
 											<!--Table head-->
 											<thead style="background-color: #DDDDDD;">
 											  <tr class="font-weight-bold  text-center">
 												<th>STT</th>
-												<th>Tài khoản</th>
-												<th>Email</th>
+												<th>Họ và tên</th>
 												<th>Ngày sinh</th>
+												<th>Email</th>
+												<th>Số điện thoại</th>
 												<th>Địa chỉ</th>
-												<th>Chức danh</th>
 												<th>Thao tác</th>
 											  </tr>
 											</thead>
@@ -113,23 +113,23 @@
 											<tbody>
 											  <tr>
 												<td scope="row"  class="text-center">1</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>namthp@gmail.com</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
 												<td class="action-account text-center">
-													<i class="fas fa-edit text-success p-1"></i>
-													<i class="fas fa-trash-alt text-danger p-1"></i>
+													<i class="fas fa-edit text-success p-1" data-toggle="modal" data-target="#add-edit-admin"></i>
+													<i class="fas fa-trash-alt text-danger p-1" data-toggle="modal" data-target="#delete-member"></i>
 												</td>
 											  </tr>
 											  <tr>
 												<td scope="row"  class="text-center">2</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>namthp@gmail.com</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
 												<td class="action-account text-center">
 													<i class="fas fa-edit text-success p-1"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
@@ -137,11 +137,11 @@
 											  </tr>
 											  <tr>
 												<td scope="row"  class="text-center">3</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>namthp@gmail.com</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
 												<td class="action-account text-center">
 													<i class="fas fa-edit text-success p-1"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
@@ -157,7 +157,7 @@
 										<div class="acc-setting">
 											<div class="title-table">
 												<h3>Quản lý Guider</h3>
-												<button class="btn btn-primary" type="button">Thêm mới</button>
+												<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#add-edit-guider">Thêm mới</button>
 										  </div>
 										  <table class="table mb-0">
 											<!--Table head-->
@@ -165,10 +165,12 @@
 											  <tr class="font-weight-bold  text-center">
 												<th>STT</th>
 												<th>Tài khoản</th>
-												<th>Email</th>
 												<th>Ngày sinh</th>
-												<th>Địa chỉ</th>
-												<th>Chức danh</th>
+												<th>Email</th>
+												<th>Số điện thoại</th>
+												<th>Quê quán</th>
+												<th>Nơi sống</th>
+												<th>Nơi làm việc</th>
 												<th>Thao tác</th>
 											  </tr>
 											</thead>
@@ -177,23 +179,27 @@
 											<tbody>
 											  <tr>
 												<td scope="row"  class="text-center">1</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>namthp@gmail.com</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
+												<td>Hải Phòng</td>
+												<td>Hải Phòng</td>
 												<td class="action-account text-center">
-													<i class="fas fa-edit text-success p-1"></i>
+													<i class="fas fa-edit text-success p-1"data-toggle="modal" data-target="#add-edit-guider"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
 												</td>
 											  </tr>
 											  <tr>
 												<td scope="row"  class="text-center">2</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>namthp@gmail.com</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
+												<td>Hải Phòng</td>
+												<td>Hải Phòng</td>
 												<td class="action-account text-center">
 													<i class="fas fa-edit text-success p-1"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
@@ -201,11 +207,13 @@
 											  </tr>
 											  <tr>
 												<td scope="row"  class="text-center">3</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>namthp@gmail.com</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
+												<td>Hải Phòng</td>
+												<td>Hải Phòng</td>
 												<td class="action-account text-center">
 													<i class="fas fa-edit text-success p-1"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
@@ -221,18 +229,18 @@
 										<div class="acc-setting">
 											<div class="title-table">
 												<h3>Quản lý User</h3>
-												<button class="btn btn-primary" type="button">Thêm mới</button>
+												<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#add-edit-user">Thêm mới</button>
 										  </div>
 										  <table class="table mb-0">
 											<!--Table head-->
 											<thead style="background-color: #DDDDDD;">
 											  <tr class="font-weight-bold  text-center">
 												<th>STT</th>
-												<th>Tài khoản</th>
-												<th>Email</th>
+												<th>Họ và tên</th>
 												<th>Ngày sinh</th>
-												<th>Địa chỉ</th>
-												<th>Chức danh</th>
+												<th>Số điện thoại</th>
+												<th>Quê quán</th>
+												<th>Nơi làm việc</th>
 												<th>Thao tác</th>
 											  </tr>
 											</thead>
@@ -241,23 +249,23 @@
 											<tbody>
 											  <tr>
 												<td scope="row"  class="text-center">1</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
+												<td>Hải Phòng</td>
 												<td class="action-account text-center">
-													<i class="fas fa-edit text-success p-1"></i>
+													<i class="fas fa-edit text-success p-1" data-toggle="modal" data-target="#add-edit-user"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
 												</td>
 											  </tr>
 											  <tr>
 												<td scope="row"  class="text-center">2</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
+												<td>Hải Phòng</td>
 												<td class="action-account text-center">
 													<i class="fas fa-edit text-success p-1"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
@@ -265,11 +273,11 @@
 											  </tr>
 											  <tr>
 												<td scope="row"  class="text-center">3</th>
-												<td>namt</td>
-												<td>namthp@gmail.com</td>
+												<td>Vũ Thiệu Nam</td>
 												<td>20/04/1999</td>
+												<td>0362418619</td>
 												<td>Hải Phòng</td>
-												<td class="text-center">Admin</td>
+												<td>Hải Phòng</td>
 												<td class="action-account text-center">
 													<i class="fas fa-edit text-success p-1"></i>
 													<i class="fas fa-trash-alt text-danger p-1"></i>
@@ -323,15 +331,209 @@
 									</div>
 								</div>
 							</div>
-						</div>
 
-						
+						</div>
 					</div><!-- main-section-data end-->
 				</div>
 			</div>
 		</main>
+	</div>
 
+	<!-- Modal thêm và sửa Admin -->
+	<div class="modal fade" id="add-edit-admin" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Thêm mới Admin</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-field">
+					<h5>Họ và tên</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
 
+				<div class="modal-field">
+					<h5>Ngày sinh</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Số điện thoại</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Email</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Địa chỉ</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-save"></i> Lưu</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i> Hủy</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Modal thêm và sửa Guider -->
+	<div class="modal fade" id="add-edit-guider" tabindex="-1" role="dialog"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Thêm mới Guider</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-field">
+					<h5>Họ và tên</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Ngày sinh</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Số điện thoại</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Email</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Quê quán</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>	
+
+				<div class="modal-field">
+					<h5>Nơi sống</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Nơi làm việc</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-save"></i> Lưu</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i> Hủy</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Modal thêm và sửa User -->
+	<div class="modal fade" id="add-edit-user" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Thêm mới User</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-field">
+					<h5>Họ và tên</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Ngày sinh</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Số điện thoại</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Quê quán</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="modal-field">
+					<h5>Nơi làm việc</h5>
+					<div class="cpp-fiel">
+						<input type="text">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-save"></i> Lưu</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i> Hủy</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Modal thêm và sửa User -->
+	<div class="modal fade" id="delete-member" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Xóa</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<h4 class=""><i class="fas fa-exclamation-triangle text-warning"></i> Bạn có chắc chắn muốn xóa tài khoản này không?</h4>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal" style="padding: 6px 16px;"><i class="fas fa-trash-alt"></i> Xóa</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal" style="padding: 6px 16px;"><i class="fas fa-ban"></i> Hủy</button>
+			</div>
+		  </div>
+		</div>
 	</div>
 	<!--theme-layout end-->
 

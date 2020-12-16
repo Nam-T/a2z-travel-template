@@ -6676,7 +6676,7 @@ a:hover {
 	display: block !important;
 }
 .modal-body {
-	padding: 0;
+	padding: 16px;
 }
 .notice {
 	background-color: #ddf3ff;
@@ -6755,23 +6755,17 @@ a:hover {
 	padding: 15px;
 }
 .modal-footer {
-	display: block !important;
 	border-top: none;
-	padding-bottom: 30px;
+	padding-bottom: 8px;
+	justify-content: flex-end;
 }
 .modal-footer button {
 	font-size: 15px;
 	font-weight: 500;
-	background-color: unset;
 	border: none;
 	padding: 10px;
 	border: 1px solid #d2d2d2;
 	border-radius: 3px;
-}
-.modal-footer button:hover {
-	background-color: #3399ff;
-	color: #fff;
-	border: 1px solid #3399ff;
 }
 
 .place-bid-btn {
@@ -6979,8 +6973,8 @@ ul#myTab {
 }
 .close {
 	position: absolute;
-	right: -25px;
-	top: -25px;
+	right: -10px;
+	top: -12px;
 	color: #fff;
 	border: 1px solid !important;
 	border-radius: 50%;
@@ -7154,4 +7148,31 @@ ul#myTab {
 	line-height: 24px;
 	font-size: 14px;
 	color: #666666;
+}
+
+/* style modal */
+.modal-field {
+	float: left;
+    width: 100%;	
+    padding: 8px 16px;
+}
+
+.modal-field h5 {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 600;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.modal-field input {
+	height: 40px;
+	padding: 0 8px;
+	width: 100%;
+	border: 1px solid #e5e5e5;
+}
+
+tbody td i {
+	cursor: pointer;
 }
